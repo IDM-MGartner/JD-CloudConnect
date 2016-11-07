@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>John Deere Cloud Connect</h1>
+    <p class="lead">Before you begin using the Connect button, go to the HomeController, Connect action, and add your John Deere App Id and shared secret.</p>
+    <p class="lead">After the redirect to John Deere, it will return to the HomeController, OAuthCallback action and you can add code to handle the token. Currently there is no code, just a redirect to the HomeController Index.</p>
+    <p><a href="@Url.Action("Connect")" class="btn btn-primary btn-lg">Connect!</a></p>
+</div>
+
+<div class="row">
+    <div>
+        <p>
+            <a href="https://oauth.net/core/1.0/" target="_blank">Here</a> is a link to an OAuth specification I saw somewhere referenced in John Deere documentation. John Deere doesn't follow the specification completely, but it helped me understand some of the pieces.
+        </p>
+    </div>
+</div>
